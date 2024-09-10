@@ -68,7 +68,7 @@ const Success = async ({ params: { userId }, searchParams }: SearchParamProps) =
                     </Link>
                 </Button>
 
-                <p className="copyright">© 2024 CarePluse</p>
+                <p className="copyright">© 2024 CarePulse</p>
             </div>
         </div>
     );
