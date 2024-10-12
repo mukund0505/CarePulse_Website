@@ -23,6 +23,13 @@ const Home = ({ searchParams }: SearchParamProps) => {
 
           <PatientForm />
 
+          {/* New Button to Navigate to Another Page */}
+          {/* <Link href="https://diseasepredictionwebapp-cmp2aisinz3mnas86antjv.streamlit.app/">
+            <button className="bg-red-500 text-white font-bold py-2 px-4 rounded mt-6 hover:bg-blue-700 transition duration-300">
+              Check Disease
+            </button>
+          </Link> */}
+
           <div className="text-14-regular mt-20 flex justify-between">
             <p className="justify-items-end text-dark-600 xl:text-left">
               © 2024 CarePulse
