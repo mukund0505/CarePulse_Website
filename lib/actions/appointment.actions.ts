@@ -100,6 +100,45 @@ export const createAppointment = async (
 //   }
 // };
 
+// export const getRecentAppointmentList = async () => {
+//   try {
+//     const appointments = await databases.listDocuments(
+//       DATABASE_ID!,
+//       APPOINTMENT_COLLECTION_ID!,
+//       [Query.orderDesc("$createdAt")]
+//     );
+
+//     const documents = (appointments?.documents as Appointment[]) || [];
+
+//     const initialCounts = {
+//       scheduledCount: 0,
+//       pendingCount: 0,
+//       cancelledCount: 0,
+//     };
+
+//     const counts = documents.reduce((acc, appointment) => {
+//       const status = appointment?.status;
+
+//       if (status === "scheduled") acc.scheduledCount++;
+//       else if (status === "pending") acc.pendingCount++;
+//       else if (status === "cancelled") acc.cancelledCount++;
+
+//       return acc;
+//     }, initialCounts);
+
+//     return parseStringify({
+//       totalCount: appointments.total || 0,
+//       ...counts,
+//       documents,
+//     });
+//   } catch (error) {
+//     console.error(
+//       "An error occurred while retrieving the recent appointments:",
+//       error
+//     );
+//   }
+// };
+
 export const getRecentAppointmentList = async () => {
   try {
     const appointments = await databases.listDocuments(
