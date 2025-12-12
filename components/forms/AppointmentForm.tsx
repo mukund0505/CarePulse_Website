@@ -135,7 +135,7 @@ export const AppointmentForm = ({
             <div className="flex justify-center" style={{ marginTop: "-20px" }}>
                 <Link href="https://diseasepredictionwebapp-cmp2aisinz3mnas86antjv.streamlit.app/">
                     <button className="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-red-500 transition duration-300">
-                        Check Disease
+                        Predict
                     </button>
                 </Link>
             </div>
